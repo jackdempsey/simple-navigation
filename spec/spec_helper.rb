@@ -5,7 +5,7 @@ require 'spec'
 require 'active_support'
 require 'action_controller'
 
-RAILS_ROOT = './' unless defined? RAILS_ROOT
+Rails.root = './' unless defined? Rails.root
 
 $:.unshift File.dirname(__FILE__)
 $:.unshift File.join(File.dirname(__FILE__), '../lib')
